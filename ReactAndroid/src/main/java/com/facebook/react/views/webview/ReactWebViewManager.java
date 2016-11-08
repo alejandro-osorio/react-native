@@ -131,7 +131,7 @@ public class ReactWebViewManager extends SimpleViewManager<WebView> {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        if (url.startsWith("http://") || url.startsWith("https://") ||
+        if (url.startsWith("http://") || url.startsWith("vtex-") || url.startsWith("https://") ||
             url.startsWith("file://")) {
           return false;
         } else {
